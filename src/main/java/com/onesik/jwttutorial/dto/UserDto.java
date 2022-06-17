@@ -32,7 +32,7 @@ public class UserDto {
     private Set<AuthorityDto> authorityDtoSet;
 
     public static UserDto from(User user) {
-        if(user == null) return null;
+        if (user == null) return null;
 
         return UserDto.builder()
                 .username(user.getUsername())
